@@ -33,9 +33,10 @@ configure: mkenv instal ## Configure project
 
 .PHONY: clean
 clean: ## Remove all generated files
+	$(RM) "*.egg-info"
 
 .PHONY: fclean
-fclean: ## Remove all generated files
+fclean: clean ## Remove all generated files
 	$(RM) ${ENV_DIR}
 
 .PHONY: re
@@ -49,7 +50,7 @@ mkenv: .env ## Make a virtual environment
 
 .PHONY: install
 install: ## Install requirements dependencies
-	${PREFIX_ENV}/$(PIP) install -r requirements-dev.txt
+	${PREFIX_ENV}/$(PIP) install -e .[dev]
 
 .PHONY: help
 help: ## Print helps

@@ -1,0 +1,23 @@
+[project]
+name = "cc-pyproject"
+dynamic = ["version"]
+authors = [{ name = "Xavier Beheydt", email = "xavier.beheydt@gmail.com" }]
+description = "Yet another Cookiecutter template for Python projects"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+keywords = ["cookiecutter", "template", "project"]
+
+[project.optional-dependencies]
+dev = [
+    "black~=24.1.1",
+    "cookiecutter~=2.5.0",
+    "flake8~=7.0.0",
+    "isort~=5.13.2",
+    # TODO "pre-commit~=3.6.0",
+    "pytest-cookies~=0.7.0",
+    "pytest~=8.0.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
