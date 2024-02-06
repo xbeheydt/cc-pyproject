@@ -21,3 +21,7 @@ dev = [
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+#  TODO : black settings
+# TODO : flake8 settings
+# TODO : isort settings
