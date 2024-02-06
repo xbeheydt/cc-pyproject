@@ -1,0 +1,36 @@
+{
+    "full_name": "Xavier Beheydt",
+    "email": "xavier.beheydt@gmail.com",
+    "github_username": "xbeheydt",
+    "project_name": "Cookiecutter PyProject Template",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "project_short_description": "A Python project template with cookiecutter and PyTest",
+    "pypi_username": "{{ cookiecutter.github_username }}",
+    "use_pytest": [
+        "yes",
+        "no"
+    ],
+    "use_black": [
+        "yes",
+        "no"
+    ],
+    "cli-lib": [
+        "Argparse",
+        "Click",
+        "No cli app"
+    ],
+    "open_source_license": [
+        "MIT License",
+        "BSD 2-clause License",
+        "BSD 3-clause License",
+        "ISC license",
+        "Apache Software License 2.0",
+        "GNU General Public License v3",
+        "The zlib/libpng License",
+        "Not open source"
+    ],
+    "uses_setuptools_scm": [
+        "yes",
+        "no"
+    ]
+}
